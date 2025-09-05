@@ -1,0 +1,19 @@
+flowchart TD
+  %% 1. Simulação
+  subgraph "1. Preparação e Simulação"
+    A1["Executar simulações com Sionna"] --> A2["Configurar transmissor (TX)"]
+    A2 --> A3["Definir receptores (carros)"]
+  end
+
+  %% 2. Processamento
+  subgraph "2. Processamento de Dados"
+    A3 --> B1["Tratar e organizar dados\n(gerar dataset)"]
+  end
+
+  %% 3. Modelagem
+  subgraph "3. Modelagem e Avaliação"
+    B1 --> C1["Construir MLP simples"]
+    C1 --> C2["Avaliar MLP\nvs dados simulados"]
+    B1 --> D1["Construir modelo PINN"]
+    D1 --> D2["Comparar PINN\nvs MLP"]
+  end
