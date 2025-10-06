@@ -1,0 +1,27 @@
+# Virtual environments and editor settings
+.venv/
+.vscode/
+
+# Build/dist/egg metadata
+build/
+dist/
+*.egg-info/
+
+# Outputs and renders (generated artifacts)
+outputs/
+
+# Large meshes and assets
+meshes/
+*.ply
+
+# Notebooks and large generated images/plots
+projeto_tcc.ipynb
+outputs/**/*.png
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc

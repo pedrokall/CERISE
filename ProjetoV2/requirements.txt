@@ -1,0 +1,10 @@
+sionna-rt
+mitsuba
+drjit
+tensorflow==2.15.0
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.9
+scikit-learn>=1.5
+scipy>=1.10
+seaborn>=0.12
